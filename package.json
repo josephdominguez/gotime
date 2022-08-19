@@ -1,7 +1,7 @@
 {
   "name": "gotime",
   "version": "1.0.0",
-  "description": "Personal time tracker application",
+  "description": "Personal time tracker and productivity application",
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
