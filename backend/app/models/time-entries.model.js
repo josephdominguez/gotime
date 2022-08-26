@@ -2,6 +2,11 @@ const mongoose = require('mongoose');
 
 const timeEntriesSchema = mongoose.Schema(
     {
+        user: {
+            type: mongoose.Schema.Types.ObjectId,
+            required: true,
+            ref: 'User'
+        },
         text: {
             type: String,
             required: [true, 'Please add a text value'],
@@ -11,4 +16,4 @@ const timeEntriesSchema = mongoose.Schema(
     }
 );
 
-module.exports = mongoose.model('TimeEntry', timeEntriesSchema)
+module.exports = mongoose.model('TimeEntry', timeEntriesSchema);
